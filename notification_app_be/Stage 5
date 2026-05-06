@@ -1,0 +1,16 @@
+/**so if it crashes not able to send them we can 
+  notify all in nodejs osr even use 1 service
+  provided by aws
+  **/
+ app .post('/notifyall',async(req,res)=>{
+    const {studnetid, meassage} = req.body
+    studentid.foreach(id=>{
+        notifyall.add(students id,"message")
+
+    });
+    });
+    res.status(202).send
+
+ 
+
+   

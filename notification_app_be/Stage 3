@@ -4,6 +4,6 @@ ON notification(studentid, isread, createdat, DESC);
 
 
 select DISTINCT studentid 
-from Notification
+from Notification 
 where createdat => NOW()-interval '7 days';
 
