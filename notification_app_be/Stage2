@@ -1,0 +1,17 @@
+//get
+app.get('/api,user',(req,res)=>{
+    const page = parseInt(req.query.page);
+    const limit = parseInt(req.query.limit);
+
+    const startindex = (page-1) *limit;
+    const endindex = page *limit ;
+
+    const result = user.slice(startindex,endindex);
+    res.json={
+        page,
+        limit,
+        totaluser = user.length
+        
+    }
+
+});
