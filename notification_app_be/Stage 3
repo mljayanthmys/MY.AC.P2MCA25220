@@ -1,0 +1,9 @@
+//the quesry is correct but need indexing to it.
+create index Notification_student_read 
+ON notification(studentid, isread, createdat, DESC);
+
+
+select DISTINCT studentid 
+from Notification
+where createdat => NOW()-interval '7 days';
+
